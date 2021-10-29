@@ -21,43 +21,81 @@ Turnship is an app that streamlines the process of candidates finding internship
 
 ## Product Spec
 
+
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can sign up or log in as a student or company recruiter
+* User can log out
+* User can swipe interested, not interested, or maybe
+* Student can match with recruiter
+* Once matched, recruiter and student can exhange messages
+* Users can upload pictures or their work and proofile picture
+* Users can tap to view profile of students or company
+* Backend requirements for student information, company information, messages, and images
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* students can talk to other students
+* students can see other students profiles
+* companies can post jobs directly from the app instead of going into the backend
+* students can successfully message a recruiter
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
+* Login Page
+   * User has ability to login
+   * User has ability to sign up
+   * User has ability to switch between candidate page and recruiter/company page
+* Sign-Up Page
+   * User has ability to fill in personal info to create a profile
+* Student Profile Page
+   * Show student projectsin table view
+   * Segue to project description page
+* Company Profile Page
+   * Shows company information including link to company website
+* Swipe Page
+   * Shows candidates jobs that match the things listed on their profile
+   * User can swipe up for maybe, right for yes and left for no
+* Project Description Page
+   * Able to view the description of a student's listed projects on their profile
+   * Able to load images related to the project
+* Pending & Matches Page
+   * Able to view matches and pending decisions in one compact view
+   * Once matched, create a conversation between the student and the company recruiter
+   * Otherwise, show pending
+* Candidate Table View Page
+   * Able to view all candidates who applied to certain position on one page
    * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Conversation Page
+   * Conversation saved in backend
+   * Recruiter from company can chat with a student
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Login/Sign-Up
+* If candidate, you're taken to the swipe page. If recruiter, you're taken to the matched candidate page.
+* You can view a candidate profile, a company profile, a job's description, and your matches and pending matches.
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Candidate Login Page
+   * Swipe Page
+        * Company Profile
+   * Pending & Matches
+   * Student Profile
+* Company Login Page
+   * Candidate Table View
+   * Messages
+* Candidate Sign-Up Page
+   * Create a Candidate Profile
+       * Swipe Page
+* Company Sign-Up Page
+   * Create a Company Profile
+       * Candidate Table View
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
