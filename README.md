@@ -1,4 +1,9 @@
-# Turnship
+Original App Design Project - README Template
+===
+
+
+
+# Schoolbud
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -31,7 +36,7 @@ Turnship is an app that streamlines the process of candidates finding internship
 * User can swipe interested, not interested, or maybe
 * Student can match with recruiter
 * Once matched, recruiter and student can exhange messages
-* Users can upload pictures or their work and proofile picture
+* Users can upload pictures or their work and profile picture
 * Users can tap to view profile of students or company
 * Backend requirements for student information, company information, messages, and images
 
@@ -44,33 +49,34 @@ Turnship is an app that streamlines the process of candidates finding internship
 
 ### 2. Screen Archetypes
 
-* Login Page
+* Login/Sign-up Page
    * User has ability to login
    * User has ability to sign up
-   * User has ability to switch between candidate page and recruiter/company page
-* Sign-Up Page
    * User has ability to fill in personal info to create a profile
-* Student Profile Page
-   * Show student projectsin table view
-   * Segue to project description page
-* Company Profile Page
-   * Shows company information including link to company website
+* User Profile Page
+   * Show user's bio, major and relevent info in table view
+   * Segue to messaging page
+ 
+
+---
+
 * Swipe Page
-   * Shows candidates jobs that match the things listed on their profile
-   * User can swipe up for maybe, right for yes and left for no
+    * Shows candidates jobs that match the things listed on their profile
+    * User can swipe up for maybe, right for yes and left for no
 * Project Description Page
-   * Able to view the description of a student's listed projects on their profile
-   * Able to load images related to the project
+    * Able to view the description of a student's listed projects on their profile
+    * Able to load images related to the project
+
+
+---
+
 * Pending & Matches Page
    * Able to view matches and pending decisions in one compact view
    * Once matched, create a conversation between the student and the company recruiter
    * Otherwise, show pending
-* Candidate Table View Page
-   * Able to view all candidates who applied to certain position on one page
-   * ...
 * Conversation Page
    * Conversation saved in backend
-   * Recruiter from company can chat with a student
+   * User can communicate with matched profile
 
 ### 3. Navigation
 
@@ -82,11 +88,10 @@ Turnship is an app that streamlines the process of candidates finding internship
 
 **Flow Navigation** (Screen to Screen)
 
-* Candidate Login Page
+* User Login Page
    * Swipe Page
-        * Company Profile
-   * Pending & Matches
-   * Student Profile
+        * User Profile
+   * Matches
 * Company Login Page
    * Candidate Table View
    * Messages
@@ -108,8 +113,102 @@ Turnship is an app that streamlines the process of candidates finding internship
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+**Student Users:**
+| Property | Type     | Description     |
+| -------- | -------- | --------      |
+| username | String   | Username of user which user created |
+| password | String | Password of user |
+| position seeking | Boolean | Internship or fulltime |
+| profile picture  | object  | User profile picture|
+| skills | list[string]   | skills such as programming languages |
+| major | String | Major |
+| classes| String | Classes |
+| bio    | String | bio you see on profile |
+| projects    | String | Projects |
+
+
+
+**Match**(when students match)
+| Property | Type | Descrption |
+| -------- | -------- | -------- |
+| MatchID | String  | Uniquw ID for the Match |
+| student1 | Student  | Student one   |
+| student2 | Student  | Student two   |
+
+
+**Conversation**
+| Property | Type | Descrption |
+| -------- | -------- | -------- |
+| MatchID | String  | Unique ID for the Match |
+| student1 | Student  | Student one   |
+| student2 | Student  | Student two   |
+| messages | list[message]  | A list of messages in the conversation   |
+| messages | String  | The student can write a new message   |
+
+**Message**
+| Property | Type | Descrption |
+| -------- | -------- | -------- |
+| MatchID | String  | Uniquw ID for the Match |
+| student | Student  | Student one   |
+| messages | list[message]  | A list of messages in the conversation   |
+| message | String  | The student can write a new message   |
+
+
+
+
+
+[Add table of models] 
 ### Networking
+
+- Login/Sign-up Screen
+    - (Read/GET) Users can login to their account.
+    ```swift=
+    PFUser.logInWithUsername(inBackground:"myname", password:"mypass") {
+      (user: PFUser?, error: Error?) -> Void in
+      if user != nil {
+        // Do stuff after successful login.
+      } else {
+        // The login failed. Check error to see why.
+      }
+    }
+    ```
+    - (Create) Users can sign-up for an account
+    ```swift=
+    func myMethod() {
+      var user = PFUser()
+      user.username = "myUsername"
+      user.password = "myPassword"
+      user.email = "email@domain.com"
+      // other fields can be set just like with PFObject
+      user["phone"] = "123-456-7890"
+
+      user.signUpInBackground {
+        (succeeded: Bool, error: Error?) -> Void in
+        if let error = error {
+          let errorString = error.localizedDescription
+          // Show the errorString somewhere and let the user try again.
+        } else {
+          // Let's fast forward to the app shall we.
+        }
+      }
+    }
+    ```
+- Profile Screen
+    - (Delete) Users can delete their profile
+    ```swift=
+    PFObject.deleteAll(inBackground: objectArray) {(succeeded, error) in
+          if (succeeded) {
+              // The array of objects was successfully deleted.
+          } else {
+              // Opps there was an error. Check the errors localized Description.
+          }
+    }
+    ```
+- (Read) Users can view the profile they liked.
+    
+
+
+
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
