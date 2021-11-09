@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CE35382D8ABE611ED47EE25 /* Pods_Turnship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5113E90D4DFC1E199CD1E6C /* Pods_Turnship.framework */; };
+		60B31A0D0E1B8CC8358CBEDD /* Pods_TurnshipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893222EE062E9F828C356BB1 /* Pods_TurnshipTests.framework */; };
+		7ECD2B597E13CA2460552D64 /* Pods_Turnship_TurnshipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8730255E97C68E548EC5183F /* Pods_Turnship_TurnshipUITests.framework */; };
+		9D5C6973273B2BA800C056C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5C6972273B2BA800C056C9 /* AppDelegate.swift */; };
+		9D5C6975273B2BA800C056C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5C6974273B2BA800C056C9 /* SceneDelegate.swift */; };
+		9D5C6977273B2BA800C056C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5C6976273B2BA800C056C9 /* ViewController.swift */; };
+		9D5C697A273B2BA800C056C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5C6978273B2BA800C056C9 /* Main.storyboard */; };
+		9D5C697C273B2BAA00C056C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5C697B273B2BAA00C056C9 /* Assets.xcassets */; };
+		9D5C697F273B2BAA00C056C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5C697D273B2BAA00C056C9 /* LaunchScreen.storyboard */; };
+		9D5C698A273B2BAA00C056C9 /* TurnshipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5C6989273B2BAA00C056C9 /* TurnshipTests.swift */; };
+		9D5C6995273B2BAA00C056C9 /* TurnshipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5C6994273B2BAA00C056C9 /* TurnshipUITests.swift */; };
+		9DA8058E273B2E0E006E6CB1 /* Chris.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA8058D273B2E0E006E6CB1 /* Chris.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D5C6986273B2BAA00C056C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D5C6967273B2BA800C056C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D5C696E273B2BA800C056C9;
+			remoteInfo = Turnship;
+		};
+		9D5C6991273B2BAA00C056C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D5C6967273B2BA800C056C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D5C696E273B2BA800C056C9;
+			remoteInfo = Turnship;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		294D4AF90771B34F03AA421D /* Pods-Turnship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnship.release.xcconfig"; path = "Target Support Files/Pods-Turnship/Pods-Turnship.release.xcconfig"; sourceTree = "<group>"; };
+		3E3ADC04A97C237B5C9BA008 /* Pods-Turnship.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnship.debug.xcconfig"; path = "Target Support Files/Pods-Turnship/Pods-Turnship.debug.xcconfig"; sourceTree = "<group>"; };
+		41E9EF7E836CB759210E7DB1 /* Pods-TurnshipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurnshipTests.release.xcconfig"; path = "Target Support Files/Pods-TurnshipTests/Pods-TurnshipTests.release.xcconfig"; sourceTree = "<group>"; };
+		7827FF84F01474381854B511 /* Pods-Turnship-TurnshipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnship-TurnshipUITests.release.xcconfig"; path = "Target Support Files/Pods-Turnship-TurnshipUITests/Pods-Turnship-TurnshipUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E3FC9375F8AAE95E1048125 /* Pods-Turnship-TurnshipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnship-TurnshipUITests.debug.xcconfig"; path = "Target Support Files/Pods-Turnship-TurnshipUITests/Pods-Turnship-TurnshipUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8730255E97C68E548EC5183F /* Pods_Turnship_TurnshipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turnship_TurnshipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		893222EE062E9F828C356BB1 /* Pods_TurnshipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TurnshipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5C696F273B2BA800C056C9 /* Turnship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turnship.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5C6972273B2BA800C056C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D5C6974273B2BA800C056C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9D5C6976273B2BA800C056C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D5C6979273B2BA800C056C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D5C697B273B2BAA00C056C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D5C697E273B2BAA00C056C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D5C6980273B2BAA00C056C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D5C6985273B2BAA00C056C9 /* TurnshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurnshipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5C6989273B2BAA00C056C9 /* TurnshipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnshipTests.swift; sourceTree = "<group>"; };
+		9D5C698B273B2BAA00C056C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D5C6990273B2BAA00C056C9 /* TurnshipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurnshipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5C6994273B2BAA00C056C9 /* TurnshipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnshipUITests.swift; sourceTree = "<group>"; };
+		9D5C6996273B2BAA00C056C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA8058D273B2E0E006E6CB1 /* Chris.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chris.storyboard; sourceTree = "<group>"; };
+		B5113E90D4DFC1E199CD1E6C /* Pods_Turnship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turnship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9067B168EC79207C5F9F14 /* Pods-TurnshipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurnshipTests.debug.xcconfig"; path = "Target Support Files/Pods-TurnshipTests/Pods-TurnshipTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D5C696C273B2BA800C056C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE35382D8ABE611ED47EE25 /* Pods_Turnship.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5C6982273B2BAA00C056C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B31A0D0E1B8CC8358CBEDD /* Pods_TurnshipTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5C698D273B2BAA00C056C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECD2B597E13CA2460552D64 /* Pods_Turnship_TurnshipUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C7AB0683AC329F48AEA3181 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E3ADC04A97C237B5C9BA008 /* Pods-Turnship.debug.xcconfig */,
+				294D4AF90771B34F03AA421D /* Pods-Turnship.release.xcconfig */,
+				7E3FC9375F8AAE95E1048125 /* Pods-Turnship-TurnshipUITests.debug.xcconfig */,
+				7827FF84F01474381854B511 /* Pods-Turnship-TurnshipUITests.release.xcconfig */,
+				FD9067B168EC79207C5F9F14 /* Pods-TurnshipTests.debug.xcconfig */,
+				41E9EF7E836CB759210E7DB1 /* Pods-TurnshipTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8618A121ECE8D0BD49A091DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5113E90D4DFC1E199CD1E6C /* Pods_Turnship.framework */,
+				8730255E97C68E548EC5183F /* Pods_Turnship_TurnshipUITests.framework */,
+				893222EE062E9F828C356BB1 /* Pods_TurnshipTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D5C6966273B2BA800C056C9 = {
+			isa = PBXGroup;
+			children = (
+				9D5C6971273B2BA800C056C9 /* Turnship */,
+				9D5C6988273B2BAA00C056C9 /* TurnshipTests */,
+				9D5C6993273B2BAA00C056C9 /* TurnshipUITests */,
+				9D5C6970273B2BA800C056C9 /* Products */,
+				7C7AB0683AC329F48AEA3181 /* Pods */,
+				8618A121ECE8D0BD49A091DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D5C6970273B2BA800C056C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D5C696F273B2BA800C056C9 /* Turnship.app */,
+				9D5C6985273B2BAA00C056C9 /* TurnshipTests.xctest */,
+				9D5C6990273B2BAA00C056C9 /* TurnshipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D5C6971273B2BA800C056C9 /* Turnship */ = {
+			isa = PBXGroup;
+			children = (
+				9D5C6972273B2BA800C056C9 /* AppDelegate.swift */,
+				9D5C6974273B2BA800C056C9 /* SceneDelegate.swift */,
+				9D5C6976273B2BA800C056C9 /* ViewController.swift */,
+				9D5C6978273B2BA800C056C9 /* Main.storyboard */,
+				9DA8058D273B2E0E006E6CB1 /* Chris.storyboard */,
+				9D5C697B273B2BAA00C056C9 /* Assets.xcassets */,
+				9D5C697D273B2BAA00C056C9 /* LaunchScreen.storyboard */,
+				9D5C6980273B2BAA00C056C9 /* Info.plist */,
+			);
+			path = Turnship;
+			sourceTree = "<group>";
+		};
+		9D5C6988273B2BAA00C056C9 /* TurnshipTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D5C6989273B2BAA00C056C9 /* TurnshipTests.swift */,
+				9D5C698B273B2BAA00C056C9 /* Info.plist */,
+			);
+			path = TurnshipTests;
+			sourceTree = "<group>";
+		};
+		9D5C6993273B2BAA00C056C9 /* TurnshipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D5C6994273B2BAA00C056C9 /* TurnshipUITests.swift */,
+				9D5C6996273B2BAA00C056C9 /* Info.plist */,
+			);
+			path = TurnshipUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D5C696E273B2BA800C056C9 /* Turnship */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D5C6999273B2BAA00C056C9 /* Build configuration list for PBXNativeTarget "Turnship" */;
+			buildPhases = (
+				9DB0FE4E8DD4905260B661DC /* [CP] Check Pods Manifest.lock */,
+				9D5C696B273B2BA800C056C9 /* Sources */,
+				9D5C696C273B2BA800C056C9 /* Frameworks */,
+				9D5C696D273B2BA800C056C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Turnship;
+			productName = Turnship;
+			productReference = 9D5C696F273B2BA800C056C9 /* Turnship.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D5C6984273B2BAA00C056C9 /* TurnshipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D5C699C273B2BAA00C056C9 /* Build configuration list for PBXNativeTarget "TurnshipTests" */;
+			buildPhases = (
+				8131BAAF425A00A3936D3233 /* [CP] Check Pods Manifest.lock */,
+				9D5C6981273B2BAA00C056C9 /* Sources */,
+				9D5C6982273B2BAA00C056C9 /* Frameworks */,
+				9D5C6983273B2BAA00C056C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D5C6987273B2BAA00C056C9 /* PBXTargetDependency */,
+			);
+			name = TurnshipTests;
+			productName = TurnshipTests;
+			productReference = 9D5C6985273B2BAA00C056C9 /* TurnshipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D5C698F273B2BAA00C056C9 /* TurnshipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D5C699F273B2BAA00C056C9 /* Build configuration list for PBXNativeTarget "TurnshipUITests" */;
+			buildPhases = (
+				DC52EED987A20448577AA155 /* [CP] Check Pods Manifest.lock */,
+				9D5C698C273B2BAA00C056C9 /* Sources */,
+				9D5C698D273B2BAA00C056C9 /* Frameworks */,
+				9D5C698E273B2BAA00C056C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D5C6992273B2BAA00C056C9 /* PBXTargetDependency */,
+			);
+			name = TurnshipUITests;
+			productName = TurnshipUITests;
+			productReference = 9D5C6990273B2BAA00C056C9 /* TurnshipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D5C6967273B2BA800C056C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9D5C696E273B2BA800C056C9 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					9D5C6984273B2BAA00C056C9 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 9D5C696E273B2BA800C056C9;
+					};
+					9D5C698F273B2BAA00C056C9 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 9D5C696E273B2BA800C056C9;
+					};
+				};
+			};
+			buildConfigurationList = 9D5C696A273B2BA800C056C9 /* Build configuration list for PBXProject "Turnship" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D5C6966273B2BA800C056C9;
+			productRefGroup = 9D5C6970273B2BA800C056C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D5C696E273B2BA800C056C9 /* Turnship */,
+				9D5C6984273B2BAA00C056C9 /* TurnshipTests */,
+				9D5C698F273B2BAA00C056C9 /* TurnshipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D5C696D273B2BA800C056C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA8058E273B2E0E006E6CB1 /* Chris.storyboard in Resources */,
+				9D5C697F273B2BAA00C056C9 /* LaunchScreen.storyboard in Resources */,
+				9D5C697C273B2BAA00C056C9 /* Assets.xcassets in Resources */,
+				9D5C697A273B2BA800C056C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5C6983273B2BAA00C056C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5C698E273B2BAA00C056C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8131BAAF425A00A3936D3233 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TurnshipTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB0FE4E8DD4905260B661DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Turnship-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC52EED987A20448577AA155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Turnship-TurnshipUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D5C696B273B2BA800C056C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D5C6977273B2BA800C056C9 /* ViewController.swift in Sources */,
+				9D5C6973273B2BA800C056C9 /* AppDelegate.swift in Sources */,
+				9D5C6975273B2BA800C056C9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5C6981273B2BAA00C056C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D5C698A273B2BAA00C056C9 /* TurnshipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5C698C273B2BAA00C056C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D5C6995273B2BAA00C056C9 /* TurnshipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D5C6987273B2BAA00C056C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D5C696E273B2BA800C056C9 /* Turnship */;
+			targetProxy = 9D5C6986273B2BAA00C056C9 /* PBXContainerItemProxy */;
+		};
+		9D5C6992273B2BAA00C056C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D5C696E273B2BA800C056C9 /* Turnship */;
+			targetProxy = 9D5C6991273B2BAA00C056C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D5C6978273B2BA800C056C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D5C6979273B2BA800C056C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D5C697D273B2BAA00C056C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D5C697E273B2BAA00C056C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D5C6997273B2BAA00C056C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D5C6998273B2BAA00C056C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D5C699A273B2BAA00C056C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3ADC04A97C237B5C9BA008 /* Pods-Turnship.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Turnship/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chrismartinez131.Turnship;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D5C699B273B2BAA00C056C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 294D4AF90771B34F03AA421D /* Pods-Turnship.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Turnship/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chrismartinez131.Turnship;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D5C699D273B2BAA00C056C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD9067B168EC79207C5F9F14 /* Pods-TurnshipTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnshipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chrismartinez131.TurnshipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Turnship.app/Turnship";
+			};
+			name = Debug;
+		};
+		9D5C699E273B2BAA00C056C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E9EF7E836CB759210E7DB1 /* Pods-TurnshipTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnshipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chrismartinez131.TurnshipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Turnship.app/Turnship";
+			};
+			name = Release;
+		};
+		9D5C69A0273B2BAA00C056C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3FC9375F8AAE95E1048125 /* Pods-Turnship-TurnshipUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnshipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chrismartinez131.TurnshipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Turnship;
+			};
+			name = Debug;
+		};
+		9D5C69A1273B2BAA00C056C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7827FF84F01474381854B511 /* Pods-Turnship-TurnshipUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnshipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chrismartinez131.TurnshipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Turnship;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D5C696A273B2BA800C056C9 /* Build configuration list for PBXProject "Turnship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D5C6997273B2BAA00C056C9 /* Debug */,
+				9D5C6998273B2BAA00C056C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D5C6999273B2BAA00C056C9 /* Build configuration list for PBXNativeTarget "Turnship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D5C699A273B2BAA00C056C9 /* Debug */,
+				9D5C699B273B2BAA00C056C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D5C699C273B2BAA00C056C9 /* Build configuration list for PBXNativeTarget "TurnshipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D5C699D273B2BAA00C056C9 /* Debug */,
+				9D5C699E273B2BAA00C056C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D5C699F273B2BAA00C056C9 /* Build configuration list for PBXNativeTarget "TurnshipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D5C69A0273B2BAA00C056C9 /* Debug */,
+				9D5C69A1273B2BAA00C056C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D5C6967273B2BA800C056C9 /* Project object */;
+}

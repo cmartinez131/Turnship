@@ -1,0 +1,6 @@
+framework module Pods_Turnship_TurnshipUITests {
+  umbrella header "Pods-Turnship-TurnshipUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
