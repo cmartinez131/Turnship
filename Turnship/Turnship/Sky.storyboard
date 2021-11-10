@@ -139,13 +139,96 @@
                     <view key="view" contentMode="scaleToFill" id="PFw-gH-L7J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TY8-8Q-73P">
+                                <rect key="frame" x="20" y="75" width="128" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Microsoft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FL-Mo-Ren">
+                                <rect key="frame" x="159" y="44" width="84" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjC-SU-emm">
+                                <rect key="frame" x="20" y="211" width="374" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="xpn-I0-79Y"/>
+                                    <constraint firstAttribute="height" constant="163" id="zLA-Pc-NPG"/>
+                                </constraints>
+                                <string key="text">About Company: Microsoft Corporation is an American multinational technology corporation which produces computer software, consumer electronics, personal computers, and related services.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsx-nQ-ooH">
+                                <rect key="frame" x="20" y="391" width="374" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="79T-Vg-lSf"/>
+                                </constraints>
+                                <string key="text">We’re looking for Software Engineers to join our team in building solutions that will encapsulate the very best of Hulu and Disney. Our teams consist of members from both the legacy Hulu team as well as the legacy Disney Streaming Services team who value hardworking team players, thrive upon the legacy of Disney and Hulu, embrace unconventional thinking, and are passionate about contributing to The Walt Disney Company’s direct-to-consumer (DTC) experience.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salary: $100,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDq-gZ-lRC">
+                                <rect key="frame" x="20" y="672" width="209" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location: New York, NY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEE-va-Iba">
+                                <rect key="frame" x="20" y="701" width="215" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Education: Bachelor's Degree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sv7-Jy-RJK">
+                                <rect key="frame" x="20" y="730" width="225" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skills: C++, Javascript, Java, HTML, CSS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59o-Hl-xfm">
+                                <rect key="frame" x="20" y="759" width="308" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Software Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf3-2v-tbx">
+                                <rect key="frame" x="20" y="356" width="215" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nMT-I7-CV2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nMT-I7-CV2" firstAttribute="trailing" secondItem="Gsx-nQ-ooH" secondAttribute="trailing" constant="20" id="HEi-HG-tqy"/>
+                            <constraint firstItem="nMT-I7-CV2" firstAttribute="trailing" secondItem="VjC-SU-emm" secondAttribute="trailing" constant="20" id="HgD-aC-XSc"/>
+                            <constraint firstItem="nMT-I7-CV2" firstAttribute="bottom" secondItem="Gsx-nQ-ooH" secondAttribute="bottom" constant="270" id="I5h-IK-Rnb"/>
+                            <constraint firstItem="Wf3-2v-tbx" firstAttribute="baseline" secondItem="VjC-SU-emm" secondAttribute="baseline" id="J50-VQ-WMM"/>
+                            <constraint firstItem="Gsx-nQ-ooH" firstAttribute="leading" secondItem="nMT-I7-CV2" secondAttribute="leading" constant="20" id="S29-1F-FuH"/>
+                            <constraint firstItem="nMT-I7-CV2" firstAttribute="trailing" secondItem="TY8-8Q-73P" secondAttribute="trailing" constant="266" id="bnZ-8V-cKG"/>
+                            <constraint firstItem="TY8-8Q-73P" firstAttribute="top" secondItem="nMT-I7-CV2" secondAttribute="top" constant="31" id="hEJ-Tw-AyT"/>
+                            <constraint firstItem="VjC-SU-emm" firstAttribute="top" secondItem="TY8-8Q-73P" secondAttribute="bottom" constant="8" symbolic="YES" id="hMx-xj-ZU0"/>
+                            <constraint firstItem="VjC-SU-emm" firstAttribute="leading" secondItem="TY8-8Q-73P" secondAttribute="leading" id="hmh-cx-g6w"/>
+                            <constraint firstItem="nMT-I7-CV2" firstAttribute="bottom" secondItem="VjC-SU-emm" secondAttribute="bottom" constant="488" id="mNF-bL-ZPd"/>
+                            <constraint firstItem="Gsx-nQ-ooH" firstAttribute="top" secondItem="Wf3-2v-tbx" secondAttribute="bottom" constant="7" id="t5D-Ar-Jgm"/>
+                            <constraint firstItem="Gsx-nQ-ooH" firstAttribute="leading" secondItem="Wf3-2v-tbx" secondAttribute="leading" id="wD8-NA-oY5"/>
+                            <constraint firstItem="VjC-SU-emm" firstAttribute="top" secondItem="TY8-8Q-73P" secondAttribute="bottom" constant="8" id="wKB-l4-UMT"/>
+                            <constraint firstItem="VjC-SU-emm" firstAttribute="leading" secondItem="nMT-I7-CV2" secondAttribute="leading" constant="20" id="xjM-tg-PoH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDv-n8-fco" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745" y="88"/>
+            <point key="canvasLocation" x="744.92753623188412" y="87.723214285714278"/>
         </scene>
     </scenes>
     <resources>
