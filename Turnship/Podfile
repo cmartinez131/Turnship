@@ -6,6 +6,7 @@ target 'Turnship' do
   use_frameworks!
 
   # Pods for Turnship
+  pod 'Parse'
 
   target 'TurnshipTests' do
     inherit! :search_paths
