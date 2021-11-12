@@ -113,11 +113,12 @@ Turnship is an app that streamlines the process of candidates finding internship
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-**Student Users:**
+**Users:**
 | Property | Type     | Description     |
 | -------- | -------- | --------      |
 | username | String   | Username of user which user created |
 | password | String | Password of user |
+| type_of_user | String   | Is user a student or companyy
 | position seeking | Boolean | Internship or fulltime |
 | profile picture  | object  | User profile picture|
 | skills | list[string]   | skills such as programming languages |
@@ -154,7 +155,8 @@ Turnship is an app that streamlines the process of candidates finding internship
 | message | String  | The student can write a new message   |
 
 
-
+GIF Of Unit 10 :
+![](https://i.imgur.com/aZ0dlhz.gif)
 
 
 [Add table of models] 
