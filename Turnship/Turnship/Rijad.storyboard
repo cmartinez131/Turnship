@@ -9,6 +9,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Conversations-->
+        <scene sceneID="v5k-cR-HrB">
+            <objects>
+                <viewController id="jFo-d4-Wfj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uZC-7x-VEe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CEN-g3-o9h">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <textField key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Chat messages between Recruiter/Student" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="mdZ-BS-4rF">
+                                    <rect key="frame" x="0.0" y="110.5" width="414" height="34"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ukz-qy-L04">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ukz-qy-L04" id="rBB-gR-o0a">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AMc-8D-wlD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AMc-8D-wlD" firstAttribute="trailing" secondItem="CEN-g3-o9h" secondAttribute="trailing" id="59H-4v-7i9"/>
+                            <constraint firstItem="CEN-g3-o9h" firstAttribute="leading" secondItem="AMc-8D-wlD" secondAttribute="leading" id="6Si-W0-LAo"/>
+                            <constraint firstItem="AMc-8D-wlD" firstAttribute="bottom" secondItem="CEN-g3-o9h" secondAttribute="bottom" id="S0H-fB-nSS"/>
+                            <constraint firstItem="CEN-g3-o9h" firstAttribute="top" secondItem="AMc-8D-wlD" secondAttribute="top" id="dcq-Hf-z3x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Conversations" id="gPU-4S-4cd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tn9-nK-udT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.33333333333334" y="70.982142857142847"/>
+        </scene>
         <!--ProjectDescription-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -43,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1034.7826086956522" y="70.982142857142847"/>
+            <point key="canvasLocation" x="1944.9275362318842" y="70.982142857142847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Sdr-6U-bAD">
@@ -61,7 +105,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MvM-Yy-h1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124.6376811594203" y="70.982142857142847"/>
+            <point key="canvasLocation" x="1034.7826086956522" y="70.982142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fS5-oN-HhS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t7y-yJ-NHA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7lh-ma-VNy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jFo-d4-Wfj" kind="relationship" relationship="rootViewController" id="ced-sh-FG0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZD-eG-Nng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778.26086956521749" y="70.982142857142847"/>
         </scene>
     </scenes>
     <resources>
