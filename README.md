@@ -3,7 +3,7 @@ Original App Design Project - README Template
 
 
 
-# Schoolbud
+# Tuenship
 
 ## Table of Contents
 1. [Overview](#Overview)
