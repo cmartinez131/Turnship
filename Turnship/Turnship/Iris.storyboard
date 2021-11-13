@@ -243,10 +243,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interns" translatesAutoresizingMaskIntoConstraints="NO" id="IWX-sW-Rcj">
-                                <rect key="frame" x="20" y="112" width="374" height="304"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amI-Ct-KhH">
                                 <rect key="frame" x="20" y="438" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -290,6 +286,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumb-1920-675369" translatesAutoresizingMaskIntoConstraints="NO" id="V92-WC-Ehh">
+                                <rect key="frame" x="20" y="95" width="374" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B9c-tb-AJ5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -301,7 +301,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="interns" width="1920" height="1080"/>
+        <image name="thumb-1920-675369" width="1920" height="1080"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
