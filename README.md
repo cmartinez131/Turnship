@@ -31,15 +31,15 @@ Turnship is an app that streamlines the process of candidates finding internship
 
 **Required Must-have Stories**
 
-* User can sign up or log in as a student or company recruiter
-* User can log out
-* User can swipe interested, not interested, or maybe
-* Student can match with recruiter
-* Once matched, recruiter and student can exhange messages
-* Users can upload pictures or their work and profile picture
-* Users can tap to view profile of students or company
-* Backend requirements for student information, company information, messages, and images
-* User can edit profile and add projects
+
+- [x] User can sign up or log in as a student or company recruiter
+- [x] User can log out
+- [] User can swipe interested, not interested, or maybe
+- [] Student can match with recruiter
+- [] Once matched, recruiter and student can exhange messages
+- [] Users can upload pictures or their work and profile picture
+- [] Users can tap to view profile of students or company
+- [] Backend requirements for student information, company information, messages, and images
 
 **Optional Nice-to-have Stories**
 
