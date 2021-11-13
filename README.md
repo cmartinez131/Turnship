@@ -3,7 +3,7 @@ Original App Design Project - README Template
 
 
 
-# Tuenship
+# Turnship
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -39,6 +39,7 @@ Turnship is an app that streamlines the process of candidates finding internship
 * Users can upload pictures or their work and profile picture
 * Users can tap to view profile of students or company
 * Backend requirements for student information, company information, messages, and images
+* User can edit profile and add projects
 
 **Optional Nice-to-have Stories**
 
@@ -46,6 +47,7 @@ Turnship is an app that streamlines the process of candidates finding internship
 * students can see other students profiles
 * companies can post jobs directly from the app instead of going into the backend
 * students can successfully message a recruiter
+* companies can edit job postings from inside the app
 
 ### 2. Screen Archetypes
 
