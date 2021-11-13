@@ -11,7 +11,7 @@
         <!--StudentSignInView-->
         <scene sceneID="IJ8-ef-8eC">
             <objects>
-                <viewController title="StudentSignInView" id="F9w-GV-Kny" sceneMemberID="viewController">
+                <viewController title="StudentSignInView" id="F9w-GV-Kny" customClass="LoginViewController" customModule="Turnship" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ebZ-17-4JR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,12 +37,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username123" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="All-Vo-zGL">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="All-Vo-zGL">
                                 <rect key="frame" x="85" y="415" width="244" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password123" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lzF-Mf-36f">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lzF-Mf-36f">
                                 <rect key="frame" x="85" y="500" width="244" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -54,10 +54,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hni-Z1-oaJ">
                                 <rect key="frame" x="95" y="631" width="224" height="30"/>
                                 <state key="normal" title="Don't have an account? Sign up!"/>
+                                <connections>
+                                    <action selector="onSignUp:" destination="F9w-GV-Kny" eventType="touchUpInside" id="rNi-Fi-lfR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHn-eH-O1X">
                                 <rect key="frame" x="168" y="556" width="44" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="onSignIn:" destination="F9w-GV-Kny" eventType="touchUpInside" id="lt6-tm-6Cf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kto-iT-7df"/>
@@ -90,6 +96,11 @@
                             <constraint firstItem="lzF-Mf-36f" firstAttribute="top" secondItem="cmV-qO-RmN" secondAttribute="bottom" constant="15" id="zfk-62-FpM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="lzF-Mf-36f" id="3km-ZO-YPo"/>
+                        <outlet property="usernameField" destination="All-Vo-zGL" id="kk6-7e-ELP"/>
+                        <segue destination="h4c-5D-irZ" kind="presentation" identifier="studentLoginSegue" id="5wu-VI-weS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMw-uZ-aJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwL-jA-AjR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2164" y="826"/>
+            <point key="canvasLocation" x="3073.913043478261" y="825.66964285714278"/>
         </scene>
         <!--Applied Candidate Page-->
         <scene sceneID="XdH-Vc-rkC">
@@ -323,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5Q-sL-NrJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2967" y="826"/>
+            <point key="canvasLocation" x="3876.811594202899" y="825.66964285714278"/>
         </scene>
         <!--Candidate Pending & Matches-->
         <scene sceneID="euq-Eb-QxY">
@@ -480,7 +491,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMk-DZ-HEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3775" y="826"/>
+            <point key="canvasLocation" x="4684.057971014493" y="825.66964285714278"/>
         </scene>
         <!--Conversations-->
         <scene sceneID="9Uh-6T-uUY">
@@ -601,9 +612,9 @@
         <!--Swipe Display-->
         <scene sceneID="2Hz-rQ-2Uw">
             <objects>
-                <viewController title="Swipe Display" id="CHm-Ms-T2M" sceneMemberID="viewController">
+                <viewController title="Swipe Display" id="CHm-Ms-T2M" customClass="SwipeViewController" customModule="Turnship" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XD5-cP-TxI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUq-V0-rvs">
@@ -690,13 +701,14 @@
                         <viewLayoutGuide key="safeArea" id="wLM-uN-lVe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="H1N-eS-eRy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Uo-Qd-YHT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="khU-wP-6b6"/>
                 <swipeGestureRecognizer direction="right" id="ZNb-bL-FG7"/>
                 <swipeGestureRecognizer direction="left" id="Tz6-4U-Wkt"/>
             </objects>
-            <point key="canvasLocation" x="29" y="826"/>
+            <point key="canvasLocation" x="939.13043478260875" y="825.66964285714278"/>
         </scene>
         <!--Student Sign-up-->
         <scene sceneID="djR-Xt-Uzx">
@@ -877,7 +889,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Uz-Um-IGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="845" y="826"/>
+            <point key="canvasLocation" x="1755.072463768116" y="825.66964285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uop-gl-BSg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h4c-5D-irZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kmw-zm-74O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CHm-Ms-T2M" kind="relationship" relationship="rootViewController" id="7az-u2-dii"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iWL-eP-tOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="825.66964285714278"/>
         </scene>
     </scenes>
     <resources>
