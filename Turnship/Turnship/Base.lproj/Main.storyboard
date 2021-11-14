@@ -179,7 +179,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuU-ZV-H1e">
                                 <rect key="frame" x="75" y="780" width="264" height="32"/>
-                                <state key="normal" title="Click here to login as student!!"/>
+                                <state key="normal" title="Click here to login as student!"/>
                                 <connections>
                                     <segue destination="F9w-GV-Kny" kind="show" id="qdp-wY-qMH"/>
                                 </connections>
@@ -697,7 +697,7 @@
         <!--View Controller-->
         <scene sceneID="chD-fG-9za">
             <objects>
-                <viewController id="obb-eT-ybI" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="obb-eT-ybI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kdo-vz-ve9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1336,7 +1336,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Active Positions" id="69u-GH-vcH">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="fux-P6-FcO">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="jyg-UQ-LcR">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="jyg-UQ-LcR">
                                 <rect key="frame" x="302" y="5" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -1592,7 +1592,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5wu-VI-weS"/>
+        <segue reference="qdp-wY-qMH"/>
+        <segue reference="uPU-Ix-i0A"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
