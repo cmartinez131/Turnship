@@ -10,6 +10,7 @@
 		0348E287273F320A00A8F2AD /* Iris.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0348E286273F320A00A8F2AD /* Iris.storyboard */; };
 		2CE35382D8ABE611ED47EE25 /* Pods_Turnship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5113E90D4DFC1E199CD1E6C /* Pods_Turnship.framework */; };
 		35C8D241273E1C9B00181DDB /* Rijad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C8D240273E1C9B00181DDB /* Rijad.storyboard */; };
+		35E86E192743686A002A7B71 /* CompanyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E86E182743686A002A7B71 /* CompanyLoginViewController.swift */; };
 		60B31A0D0E1B8CC8358CBEDD /* Pods_TurnshipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893222EE062E9F828C356BB1 /* Pods_TurnshipTests.framework */; };
 		7ECD2B597E13CA2460552D64 /* Pods_Turnship_TurnshipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8730255E97C68E548EC5183F /* Pods_Turnship_TurnshipUITests.framework */; };
 		7FAE7553273B35CA00EFA714 /* Sky.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE7552273B35CA00EFA714 /* Sky.storyboard */; };
@@ -47,6 +48,7 @@
 		0348E286273F320A00A8F2AD /* Iris.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Iris.storyboard; sourceTree = "<group>"; };
 		294D4AF90771B34F03AA421D /* Pods-Turnship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnship.release.xcconfig"; path = "Target Support Files/Pods-Turnship/Pods-Turnship.release.xcconfig"; sourceTree = "<group>"; };
 		35C8D240273E1C9B00181DDB /* Rijad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rijad.storyboard; sourceTree = "<group>"; };
+		35E86E182743686A002A7B71 /* CompanyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyLoginViewController.swift; sourceTree = "<group>"; };
 		3E3ADC04A97C237B5C9BA008 /* Pods-Turnship.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnship.debug.xcconfig"; path = "Target Support Files/Pods-Turnship/Pods-Turnship.debug.xcconfig"; sourceTree = "<group>"; };
 		41E9EF7E836CB759210E7DB1 /* Pods-TurnshipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurnshipTests.release.xcconfig"; path = "Target Support Files/Pods-TurnshipTests/Pods-TurnshipTests.release.xcconfig"; sourceTree = "<group>"; };
 		7827FF84F01474381854B511 /* Pods-Turnship-TurnshipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turnship-TurnshipUITests.release.xcconfig"; path = "Target Support Files/Pods-Turnship-TurnshipUITests/Pods-Turnship-TurnshipUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				9D5C6980273B2BAA00C056C9 /* Info.plist */,
 				35C8D240273E1C9B00181DDB /* Rijad.storyboard */,
 				0348E286273F320A00A8F2AD /* Iris.storyboard */,
+				35E86E182743686A002A7B71 /* CompanyLoginViewController.swift */,
 			);
 			path = Turnship;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E86E192743686A002A7B71 /* CompanyLoginViewController.swift in Sources */,
 				9D372919273F4F3E00F90F9A /* SwipeViewController.swift in Sources */,
 				9D372917273F4F1000F90F9A /* LoginViewController.swift in Sources */,
 				9D5C6977273B2BA800C056C9 /* ViewController.swift in Sources */,
