@@ -14,6 +14,7 @@
 		60B31A0D0E1B8CC8358CBEDD /* Pods_TurnshipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893222EE062E9F828C356BB1 /* Pods_TurnshipTests.framework */; };
 		7ECD2B597E13CA2460552D64 /* Pods_Turnship_TurnshipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8730255E97C68E548EC5183F /* Pods_Turnship_TurnshipUITests.framework */; };
 		7FAE7553273B35CA00EFA714 /* Sky.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE7552273B35CA00EFA714 /* Sky.storyboard */; };
+		9D236FE127459FD300ADD285 /* StudentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D236FE027459FD300ADD285 /* StudentProfileViewController.swift */; };
 		9D372917273F4F1000F90F9A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D372916273F4F1000F90F9A /* LoginViewController.swift */; };
 		9D372919273F4F3E00F90F9A /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D372918273F4F3E00F90F9A /* SwipeViewController.swift */; };
 		9D5C6973273B2BA800C056C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5C6972273B2BA800C056C9 /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 		7FAE7552273B35CA00EFA714 /* Sky.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sky.storyboard; sourceTree = "<group>"; };
 		8730255E97C68E548EC5183F /* Pods_Turnship_TurnshipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turnship_TurnshipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		893222EE062E9F828C356BB1 /* Pods_TurnshipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TurnshipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D236FE027459FD300ADD285 /* StudentProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileViewController.swift; sourceTree = "<group>"; };
 		9D372916273F4F1000F90F9A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D372918273F4F3E00F90F9A /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		9D5C696F273B2BA800C056C9 /* Turnship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turnship.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +161,7 @@
 				9D5C6976273B2BA800C056C9 /* ViewController.swift */,
 				9D5C6978273B2BA800C056C9 /* Main.storyboard */,
 				9D372916273F4F1000F90F9A /* LoginViewController.swift */,
+				9D236FE027459FD300ADD285 /* StudentProfileViewController.swift */,
 				9D372918273F4F3E00F90F9A /* SwipeViewController.swift */,
 				7FAE7552273B35CA00EFA714 /* Sky.storyboard */,
 				9D5C697B273B2BAA00C056C9 /* Assets.xcassets */,
@@ -436,6 +439,7 @@
 				9D372917273F4F1000F90F9A /* LoginViewController.swift in Sources */,
 				9D5C6977273B2BA800C056C9 /* ViewController.swift in Sources */,
 				9D5C6973273B2BA800C056C9 /* AppDelegate.swift in Sources */,
+				9D236FE127459FD300ADD285 /* StudentProfileViewController.swift in Sources */,
 				9D5C6975273B2BA800C056C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
