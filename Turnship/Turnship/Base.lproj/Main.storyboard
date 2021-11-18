@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F9w-GV-Kny">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F9w-GV-Kny">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +11,7 @@
         <!--StudentSignInView-->
         <scene sceneID="IJ8-ef-8eC">
             <objects>
-                <viewController title="StudentSignInView" modalPresentationStyle="fullScreen" id="F9w-GV-Kny" customClass="LoginViewController" customModule="Turnship" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="StudentSignInView" modalPresentationStyle="fullScreen" id="F9w-GV-Kny" customClass="LoginViewController" customModule="Turnship" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ebZ-17-4JR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +106,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Gi5-Oy-aTx">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="qew-9D-igJ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="StudentTabBarController" modalPresentationStyle="fullScreen" id="qew-9D-igJ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="roj-SY-5zf"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OpX-e2-3Rh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -218,6 +217,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MGY-td-KrT"/>
+                    <connections>
+                        <segue destination="QnF-ZP-7vG" kind="presentation" id="G8O-12-ooe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKD-lM-e1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="0O3-s9-czc" userLabel="Exit" sceneMemberID="exit"/>
@@ -247,7 +249,7 @@
             <objects>
                 <viewController id="xfq-zl-ngJ" userLabel="Applied Candidate Page" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OvL-eh-nzc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vfd-Ll-ZrV">
@@ -256,7 +258,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="122" id="2Ko-9g-H0P">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="122"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Ko-9g-H0P" id="teO-Bk-pyB">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
@@ -319,7 +321,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="122" id="fuG-Zs-tr5">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="122"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fuG-Zs-tr5" id="959-6L-8qc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
@@ -476,17 +478,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FFL-w5-viZ">
-                                <rect key="frame" x="0.0" y="56" width="414" height="757"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <textField key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Chat messages between Recruiter/Student" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="CaQ-6Q-GBY">
-                                    <rect key="frame" x="0.0" y="110.5" width="414" height="34"/>
+                                    <rect key="frame" x="0.0" y="92.500000346790671" width="414" height="34"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4lu-15-XLu">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4lu-15-XLu" id="tsw-yu-3eT">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -601,13 +603,11 @@
                                 <rect key="frame" x="67" y="768" width="109" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Profile Image"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxF-hG-mMD">
                                 <rect key="frame" x="285" y="768" width="77" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Projects"/>
                                 <connections>
                                     <segue destination="obb-eT-ybI" kind="show" id="SOX-KG-6By"/>
                                 </connections>
@@ -648,7 +648,6 @@
                                 <rect key="frame" x="11" y="292" width="124" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Project 1 Image"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="InO-Dz-2w5">
                                 <rect key="frame" x="20" y="117" width="374" height="34"/>
@@ -693,7 +692,6 @@
                                 <rect key="frame" x="17" y="578" width="126" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Project 2 Image"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKb-2k-9OE">
                                 <rect key="frame" x="17" y="378" width="374" height="34"/>
@@ -738,7 +736,6 @@
                                 <rect key="frame" x="10" y="821" width="126" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Project 3 Image"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T88-AU-zUV">
                                 <rect key="frame" x="20" y="646" width="374" height="34"/>
@@ -893,9 +890,7 @@
                                 <rect key="frame" x="0.0" y="36" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Turnship" id="JTD-Hh-AOa">
-                                        <barButtonItem key="leftBarButtonItem" title="Log-out" id="5aP-oQ-NNU"/>
-                                    </navigationItem>
+                                    <navigationItem title="Turnship" id="JTD-Hh-AOa"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Software Enginner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-Vk-fNh">
@@ -915,7 +910,13 @@
                         <viewLayoutGuide key="safeArea" id="wLM-uN-lVe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="H1N-eS-eRy"/>
+                    <navigationItem key="navigationItem" id="H1N-eS-eRy">
+                        <barButtonItem key="leftBarButtonItem" title="Log-out" id="5aP-oQ-NNU">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="CHm-Ms-T2M" id="Pnt-IU-qzq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Uo-Qd-YHT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="khU-wP-6b6"/>
@@ -932,7 +933,7 @@
         <!--Student Profile-->
         <scene sceneID="oc3-fM-ujb">
             <objects>
-                <viewController title="Student Profile" id="Pcs-Vd-Vdv" sceneMemberID="viewController">
+                <viewController title="Student Profile" id="Pcs-Vd-Vdv" customClass="StudentProfileViewController" customModule="Turnship" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ffY-oh-9AU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -959,7 +960,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="93" id="pPt-Gc-Gwr">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="93"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pPt-Gc-Gwr" id="2cF-F2-C5w">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
@@ -1036,7 +1037,6 @@
                                 <rect key="frame" x="302" y="11" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Edit"/>
                             </button>
                             <connections>
                                 <segue destination="gvR-pQ-YQL" kind="show" id="Kx0-y0-rnR"/>
@@ -1113,7 +1113,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dif-Ba-870"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="418-vj-GI2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1130,7 +1130,7 @@
             <objects>
                 <viewController id="job-K7-wt5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xls-uT-cU8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sFh-fz-564">
@@ -1139,7 +1139,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="122" id="QtK-9f-en3">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="122"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QtK-9f-en3" id="6nc-H9-aAP">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
@@ -1163,7 +1163,6 @@
                                                     <rect key="frame" x="336" y="45" width="49" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Edit"/>
                                                     <connections>
                                                         <segue destination="2XJ-hV-3L5" kind="show" id="3ex-Tg-8qK"/>
                                                     </connections>
@@ -1180,10 +1179,9 @@
                     <navigationItem key="navigationItem" title="Active Positions" id="69u-GH-vcH">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="fux-P6-FcO">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="jyg-UQ-LcR">
-                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
+                                <rect key="frame" x="302" y="11" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="New"/>
                             </button>
                             <connections>
                                 <segue destination="Rq1-sm-8Ut" kind="show" id="DbJ-z4-ltK"/>
@@ -1200,7 +1198,7 @@
             <objects>
                 <viewController id="Rq1-sm-8Ut" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fCO-BS-gN3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq3-Bv-T51">
@@ -1298,7 +1296,6 @@
                                 <rect key="frame" x="152" y="794" width="111" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save Position"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OZM-8j-ZN1"/>
@@ -1308,10 +1305,9 @@
                     <navigationItem key="navigationItem" id="yMd-ci-2jj">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="AaL-SO-nac">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Je8-qS-Aan">
-                                <rect key="frame" x="320.5" y="5" width="73.5" height="34.5"/>
+                                <rect key="frame" x="320.5" y="11" width="73.5" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -1326,7 +1322,7 @@
             <objects>
                 <viewController id="2XJ-hV-3L5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QGg-OT-Vw5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Position Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJZ-Eq-7eZ">
@@ -1424,7 +1420,6 @@
                                 <rect key="frame" x="152" y="818" width="111" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save Position"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZmC-gE-tZe"/>
@@ -1433,10 +1428,9 @@
                     <navigationItem key="navigationItem" id="tsx-bg-oTu">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="x8x-zd-rpO">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="vEc-0R-BGH">
-                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
+                                <rect key="frame" x="302" y="11" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -1453,7 +1447,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="R8e-ga-hrs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1fP-cj-lCI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

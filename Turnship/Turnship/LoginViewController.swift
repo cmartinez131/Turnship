@@ -38,8 +38,16 @@ class LoginViewController: UIViewController {
         user.password = passwordField.text
         //user.email = "email@example.com" //can add an email here optional
           // other fields can be set just like with PFObject
-          //user["phone"] = "415-392-0202" can add phone here optional
+        //user["phone"] = "415-392-0202" can add phone here optional
         //this is where we can make other properties of student
+        user["name"] = "" //type string
+        user["example"] = "this is an example variable"
+        user["bio"] = ""
+        user["education"] = ""
+        user["skills"] = [] //type array. if you want to change the type of this, you have to delete the skills array column in back4app and make a new column
+        user["location"] = ""
+        user["role"] = ""
+        
         
         user.signUpInBackground { (success, error) in
             if success{

@@ -5,6 +5,7 @@
 //  Created by Christopher Martinez on 11/12/21.
 //
 
+import Parse
 import UIKit
 
 class SwipeViewController: UIViewController {
@@ -15,7 +16,15 @@ class SwipeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name: "Main",bundle: nil)
+        let LoginViewController = main.instantiateViewController(identifier: "LoginViewController")
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else { return }
+        delegate.window?.rootViewController = LoginViewController
+        
+    }
+    
     /*
     // MARK: - Navigation
 
