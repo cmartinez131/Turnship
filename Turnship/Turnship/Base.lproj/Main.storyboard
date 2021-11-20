@@ -141,37 +141,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWW-fL-Dw4">
-                                <rect key="frame" x="171" y="556" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWW-fL-Dw4">
+                                <rect key="frame" x="110" y="556" width="194" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="onLogin:" destination="Xlj-KN-pGh" eventType="touchUpInside" id="Lzo-Zo-9jY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuU-ZV-H1e">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuU-ZV-H1e">
                                 <rect key="frame" x="75" y="782" width="264" height="30"/>
                                 <state key="normal" title="Click here to login as student!"/>
                                 <connections>
                                     <segue destination="F9w-GV-Kny" kind="show" id="qdp-wY-qMH"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebZ-Zx-efq">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebZ-Zx-efq">
                                 <rect key="frame" x="85" y="493" width="244" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obx-8J-gOW">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obx-8J-gOW">
                                 <rect key="frame" x="85" y="408" width="244" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7r6-Al-I6w">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7r6-Al-I6w">
                                 <rect key="frame" x="153" y="464" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kv1-Ro-1XN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kv1-Ro-1XN">
                                 <rect key="frame" x="148" y="379" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -183,6 +184,7 @@
                         <constraints>
                             <constraint firstItem="DWW-fL-Dw4" firstAttribute="top" secondItem="ebZ-Zx-efq" secondAttribute="bottom" constant="29" id="1m3-kI-EG4"/>
                             <constraint firstItem="Obx-8J-gOW" firstAttribute="top" secondItem="Kv1-Ro-1XN" secondAttribute="bottom" constant="8" symbolic="YES" id="8uk-VX-8mu"/>
+                            <constraint firstItem="81I-ZV-0uV" firstAttribute="trailing" secondItem="DWW-fL-Dw4" secondAttribute="trailing" constant="110" id="BL5-qX-7To"/>
                             <constraint firstItem="TZj-JC-7ff" firstAttribute="top" secondItem="81I-ZV-0uV" secondAttribute="top" constant="272" id="D0r-SL-X4j"/>
                             <constraint firstItem="Obx-8J-gOW" firstAttribute="leading" secondItem="81I-ZV-0uV" secondAttribute="leading" constant="85" id="DYk-PV-C8y"/>
                             <constraint firstItem="81I-ZV-0uV" firstAttribute="trailing" secondItem="TZj-JC-7ff" secondAttribute="trailing" constant="174" id="Fnc-op-4Ul"/>
@@ -191,6 +193,7 @@
                             <constraint firstItem="DWW-fL-Dw4" firstAttribute="top" secondItem="ebZ-Zx-efq" secondAttribute="bottom" constant="29" id="Nud-V6-I7h"/>
                             <constraint firstItem="81I-ZV-0uV" firstAttribute="trailing" secondItem="ebZ-Zx-efq" secondAttribute="trailing" constant="85" id="OAl-01-QU6"/>
                             <constraint firstItem="7r6-Al-I6w" firstAttribute="top" secondItem="Obx-8J-gOW" secondAttribute="bottom" constant="22" id="ShN-4s-q9W"/>
+                            <constraint firstItem="DWW-fL-Dw4" firstAttribute="leading" secondItem="81I-ZV-0uV" secondAttribute="leading" constant="110" id="UTg-WC-fNY"/>
                             <constraint firstItem="TZj-JC-7ff" firstAttribute="leading" secondItem="81I-ZV-0uV" secondAttribute="leading" constant="140" id="VT7-aC-e3P"/>
                             <constraint firstItem="Kv1-Ro-1XN" firstAttribute="top" secondItem="TZj-JC-7ff" secondAttribute="bottom" constant="35" id="bui-WO-fgj"/>
                             <constraint firstItem="ebZ-Zx-efq" firstAttribute="leading" secondItem="81I-ZV-0uV" secondAttribute="leading" constant="85" id="cwp-c1-JZC"/>
@@ -205,8 +208,6 @@
                             <constraint firstItem="81I-ZV-0uV" firstAttribute="trailing" secondItem="Obx-8J-gOW" secondAttribute="trailing" constant="85" id="rmG-t6-x21"/>
                             <constraint firstItem="7r6-Al-I6w" firstAttribute="leading" secondItem="81I-ZV-0uV" secondAttribute="leading" constant="153" id="v1e-9q-BAH"/>
                             <constraint firstItem="XuU-ZV-H1e" firstAttribute="leading" secondItem="81I-ZV-0uV" secondAttribute="leading" constant="75" id="w8r-Sf-hgM"/>
-                            <constraint firstItem="DWW-fL-Dw4" firstAttribute="leading" secondItem="81I-ZV-0uV" secondAttribute="leading" constant="171" id="zHV-YW-QN5"/>
-                            <constraint firstItem="81I-ZV-0uV" firstAttribute="trailing" secondItem="DWW-fL-Dw4" secondAttribute="trailing" constant="205" id="zOF-nK-yI4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MGY-td-KrT"/>
@@ -218,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKD-lM-e1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4377" y="-1538"/>
+            <point key="canvasLocation" x="4376.811594202899" y="-1538.1696428571429"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ygi-7m-F8H">
