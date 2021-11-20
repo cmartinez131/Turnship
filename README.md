@@ -90,17 +90,17 @@ Turnship is an app that streamlines the process of candidates finding internship
 
 **Flow Navigation** (Screen to Screen)
 
-* User Login Page
+- [x] User Login Page
    * Swipe Page
         * User Profile
    * Matches
 * Company Login Page
    * Candidate Table View
    * Messages
-* Candidate Sign-Up Page
+- [x] Candidate Sign-Up Page
    * Create a Candidate Profile
        * Swipe Page
-* Company Sign-Up Page
+- [x] Company Sign-Up Page
    * Create a Company Profile
        * Candidate Table View
 
@@ -157,7 +157,7 @@ Turnship is an app that streamlines the process of candidates finding internship
 | message | String  | The student can write a new message   |
 
 
-GIF Of Unit 10 :
+### GIF Of Unit 10 :
 ![](https://i.imgur.com/aZ0dlhz.gif)
 
 
