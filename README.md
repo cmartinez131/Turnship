@@ -34,12 +34,13 @@ Turnship is an app that streamlines the process of candidates finding internship
 
 - [x] User can sign up or log in as a student or company recruiter
 - [x] User can log out
+- [x] User can navigate between log in screen, profile screen, and matches screen
 - [] User can swipe interested, not interested, or maybe
 - [] Student can match with recruiter
 - [] Once matched, recruiter and student can exhange messages
 - [] Users can upload pictures or their work and profile picture
 - [] Users can tap to view profile of students or company
-- [] Backend requirements for student information, company information, messages, and images
+
 
 **Optional Nice-to-have Stories**
 
@@ -155,6 +156,10 @@ Turnship is an app that streamlines the process of candidates finding internship
 | student | Student  | Student one   |
 | messages | list[message]  | A list of messages in the conversation   |
 | message | String  | The student can write a new message   |
+
+### GIF Of Unit 13 :
+![](https://i.imgur.com/PomZt1P.gif)
+
 ### GIF Of Unit 11 :
 ![](https://i.imgur.com/Aa9dNvu.gif)
 
@@ -218,4 +223,3 @@ Turnship is an app that streamlines the process of candidates finding internship
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
-
